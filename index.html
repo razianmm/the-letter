@@ -636,8 +636,6 @@ function goFullscreen(evt){
 }
 document.addEventListener("keydown", goFullscreen);
 
-document.getElementById("myAudio").play();
-
 </script>
 </head>
 <body onload="init()" onkeydown="goFullscreen(event);">
@@ -656,4 +654,9 @@ Your browser does not support the audio element.
  <a href="http://www.flickgame.org" id="hackLink"></a> <a  id="homeLink" href="http://www.flickgame.org"></a> 
 </div>
 </body>
+<script>
+
+document.getElementById("myAudio").play();
+            
+</script>
 </html>
