@@ -638,7 +638,7 @@ document.addEventListener("keydown", goFullscreen);
 
 </script>
 </head>
-<body onload="init()" onkeydown="goFullscreen(event);">
+<body onload="init()" onkeydown="goFullscreen(event);" id="body">
 <audio id="myAudio" controls>
   <source src="Hum.mp3" type="audio/mp3">
 Your browser does not support the audio element.
@@ -656,7 +656,7 @@ Your browser does not support the audio element.
 </body>
 <script>
 
-document.getElementById("myAudio").play();
+document.getElementById("body).addEventListener("click", () => document.getElementById("myAudio").play());
             
 </script>
 </html>
